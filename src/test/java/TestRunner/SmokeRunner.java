@@ -9,7 +9,9 @@ import org.junit.runner.RunWith;
 //@CucumberOptions(features = "src\\test\\resources\\Features" ,glue = "StepDefinitions",dryRun = false, tags="@testcase1 or @testcase2")
 @CucumberOptions(features = "src\\test\\resources\\Features",
         glue = "StepDefinitions",
-        dryRun = false)
+        dryRun = true,
+        tags = "@smoke1",
+        plugin = {"pretty"})
 
 public class SmokeRunner {
 }
