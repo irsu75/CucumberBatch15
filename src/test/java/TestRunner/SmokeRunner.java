@@ -10,11 +10,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src\\test\\resources\\Features",
         glue = "StepDefinitions",
         dryRun = false,
-        tags = "@smoke",
-        plugin = {"pretty"})
+        tags = "@testcase2",
+        plugin = {"pretty", "html:target/Cucumber.html", "json:target/Cucumber.json"})
 
 public class SmokeRunner {
 }
 
 
   // tags option will execute the tagged testcase as mentioned in your runner class
+ // target folder is mostly used for storing the case execution reports generated using Cucumber

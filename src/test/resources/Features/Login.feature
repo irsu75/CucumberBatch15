@@ -45,10 +45,10 @@ Feature: Login Functionalities
     # config file
     # ==========================================================
     # Cucumber Expression  [ Limited set of test data ]
-    # Scenario Outline     [ Parameterization ] , [ Data Driven Testing ], [Browser will open and close number of times we have test
+    # Scenario Outline     [ Parameterization ],[ Data Driven Testing ],[Browser will open and close number of times we have test
     # data Table
 
-    # Object Model : An object Repository [ It store or holds all the
+    # Object Model : An object Repository [ It store or holds all the webElement specific to a parti
 
 
 
