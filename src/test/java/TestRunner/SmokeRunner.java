@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
 //@CucumberOptions(features = "src\\test\\resources\\Features" ,glue = "StepDefinitions",dryRun = false, tags="@testcase1 or @testcase2")
 @CucumberOptions(features = "src\\test\\resources\\Features",
         glue = "StepDefinitions",
-        dryRun = false,
-        tags = "@testcase2",
-        plugin = {"pretty", "html:target/Cucumber.html", "json:target/Cucumber.json"})
+        dryRun = true,
+        tags = "@database",
+        plugin = {"pretty", "html:target/Cucumber.html", "json:target/Cucumber.json","rerun:target/failed.txt"})
 
 public class SmokeRunner {
 }
