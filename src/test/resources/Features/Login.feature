@@ -1,16 +1,15 @@
 Feature: Login Functionalities
 
   @smoke
-  Scenario: Valid Admin Login
+  Scenario: Valid Admin login
     #Given open the browser and launch HRMS application
     When user enters valid email and valid password
     And click on login button
     Then user is logged in successfully into the application
-    Examples:
     #And Close the browser
 
   @smoke2
-  Scenario: Valid Admin Login
+  Scenario: Valid Admin login
     #Given open the browser and launch HRMS application
     When user enters valid "ADMIN" and valid "Hum@nhrm123"
     And click on login button
@@ -31,13 +30,17 @@ Feature: Login Functionalities
       | ADMIN    | Hum@nhrm123 |
       | Jason    | Hum@nhrm123 |
 
-     @dataTable
+  @dataTable
   Scenario: Login with multiple credentials using data table
-  When user enters username and password and verifies login
-    | username | password    |
-    | admin    | Hum@nhrm123 |
-    | ADMIN    | Hum@nhrm123 |
-    | Jason    | Hum@nhrm123 |
+    When user enters username and password and verifies login
+      | username | password    |
+      | admin    | Hum@nhrm123 |
+      | ADMIN    | Hum@nhrm123 |
+      | Jason    | Hum@nhrm123 |
+
+
+
+
 
 
 

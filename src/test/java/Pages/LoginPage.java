@@ -7,20 +7,23 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends CommonMethods {
 
-    public LoginPage(){
-        PageFactory.initElements(driver,this); //Initializing the webElements of the current page
+    public LoginPage()
+
+    {
+        PageFactory.initElements(driver, this); // Initializing the webElements of the current page
+
     }
 
-    @FindBy(id="txtUsername")
+
+    @FindBy(id = "txtUsername")
     public WebElement usernameTextBox;
 
 
-    @FindBy(id="txtPassword")
+    @FindBy(id = "txtPassword")
     public WebElement passwordTextBox;
 
-    @FindBy(id="btnLogin")
+    @FindBy(id = "btnLogin")
     public WebElement loginBtn;
-
     // Page Factory Model
 
     @FindBy(id = "welcome")
@@ -28,6 +31,7 @@ public class LoginPage extends CommonMethods {
 
     @FindBy(xpath = "//a[text()='Logout']")
     public WebElement logoutLink;
+
 
 
 

@@ -9,7 +9,7 @@ public class PageInitializer {
 
     public static AddEmployeePage addEmployeePage;
 
-    public static void initializePageObject(){
+    public  static void initializePageObjects() {
 
          login = new LoginPage();
 

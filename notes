@@ -27,3 +27,39 @@ in order to integrate our db in framework , we create dbutility class
 
 select emp_firstname, emp_lastname
 from hr_hs_employee
+where employee_id='12345';
+
+we have added a scenario in addemployee feature file
+we have added steps in add employee steps page
+we have added tag of the scenario in runner class
+
+
+scenario is to capture the employee id from UI
+and verify it with the DB
+for this, we have added scenario in feature file
+and added in step definitions
+
+then we are verifying firstname, middlename, lastname etc one by one
+because we cannot compare bunch of value in one attempt
+
+----------------------------------------------------------------------------------------------------------------------
+                                     API
+
+   in postman - base URL + endpoint
+
+   in rest assured API
+   base URI = base URL
+
+   hamcrest matchers -
+   hamcrest is a popular framework that helps us to create matcher objects.
+   It is used for writing tests and performs testing in programming. Hamrest is mainly used with other testing
+    frameworks like junit.
+
+    Hamcrest matchers -
+    class that contains methods to perform assertions
+
+    JsonPath vs jsonPath()?
+
+    JsonPath is a class
+    jsonPath() is a method that belong to JsonPath class
+
